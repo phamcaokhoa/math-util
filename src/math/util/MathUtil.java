@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package math.util;
-
 /**
  *
  * @author Khoa Pham
@@ -29,6 +28,4 @@ public class MathUtil {
         }
         return result;
     }
-    
-    
 }
