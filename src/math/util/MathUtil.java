@@ -16,16 +16,25 @@ public class MathUtil {
     
     // hàm tính n giai thừa . n>= 0 && n <= 20;
     // nếu quá 20 tràn kiểu long
+//    public static long getFactorial(int n){
+//        if(n < 0 || n > 20){
+//            throw new IllegalArgumentException("n must be >= 0 & <= 20");
+//            // đưa giá trị sai, không nên trả về 1 giá trị ám chỉ sai
+//        }if (n == 0 || n == 1)
+//            return 1; //0! = 1, 1! = 1
+//        long result = 1;
+//        for (int i = 2; i <= n; i++) {
+//            result *= i;
+//        }
+//        return result;
+//    }
+    
     public static long getFactorial(int n){
         if(n < 0 || n > 20){
             throw new IllegalArgumentException("n must be >= 0 & <= 20");
             // đưa giá trị sai, không nên trả về 1 giá trị ám chỉ sai
         }if (n == 0 || n == 1)
             return 1; //0! = 1, 1! = 1
-        long result = 1;
-        for (int i = 2; i <= n; i++) {
-            result *= i;
-        }
-        return result;
+       return n * getFactorial(n - 1);
     }
 }
