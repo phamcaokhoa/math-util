@@ -24,6 +24,9 @@ public class main {
         //e: ném về ngoại lệ IllegalArgumentException
         System.out.println("a" + MathUtil.getFactorial(-1));
         
+        
+        
+        System.out.println("CI for today.");
     }
 }
 
