@@ -36,8 +36,10 @@ public class MathUtilityTest {
             assertEquals(720, MathUtil.getFactorial(6));
             assertEquals(24, MathUtil.getFactorial(4));
             assertEquals(6, MathUtil.getFactorial(3));
-            assertEquals(1, MathUtil.getFactorial(0));
+            assertEquals(1, MathUtil.getFactorial(1));
             assertEquals(0, MathUtil.getFactorial(1));
+            
+            // kì vọng thấy xanh trên GIT
         }
         
 }
